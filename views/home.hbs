@@ -1,0 +1,64 @@
+<section id="section1" class="panel">
+    <div class="bio-info">
+        <h1 class="p-name"><p>There is some things I really love it and one of them is sushi, 
+    a glass of wine and to use high heels. </p>
+    <p>Is interesting since I came to 
+    came I just used high heels twice. Is because here is too hard to use because: 
+    I am not working yet, I use o take a lot of bus, and the weather doesn't help.</p>
+    <p>Other thing I really love it is sushi. </p><p>When I was single, I used to eat every 
+    week, but since I got married this became less than I wish, just because sushi 
+    is an expensive meal and my husband is very secury about saving money.</p>
+    <p>The last thing I love is wine.</p><p> I enjoy by myself drinking one glass every night. 
+    This is something I really appreciate and I never gonna stop.</p> 
+            </h1>
+    </div>
+
+</section>
+{{!-- <section id="section2" class="panel">panel 2</section> --}}
+<section id="section3" class="panel">
+    <h1 class="user-panel-heading">
+        Welcome to my favorite things!
+    </h1>
+
+
+    <h4>Click on a thing below to learn more about them.</h4>
+
+    <div class="team">
+        <!-- loop through all our team members and put their info on the page -->
+        {{!-- exactly like a forEach loop with plain js --}}
+        {{#each data}}
+            <div class="user-panel">
+                <img class="u-avatar" src="images/{{ avatar }}" alt="avatar">
+
+                <a class="u-link" href="{{ ID }}">See more info.</a>
+
+                <h1>{{ Name }}</h1>
+
+                <h3>{{ JobTitle }}</h3>
+
+            </div>
+        {{/each}}
+
+        {{#each data}}
+
+            <p>{{ classes }}</p>
+
+        {{/each}}
+
+    </div>
+    </div>
+
+    <!-- this will be filled in on the client side when we render our AJAX data -->
+    <section class="lightbox">
+        <span class="close">x</span>
+        <div class="sidebar">
+            <img src="" alt="larger bio image">
+        </div>
+
+        <div class="lb-content">
+
+        </div>
+    </section>
+</section>
+<section id="section4" class="panel">Others</section>
+<section id="section5" class="panel"></section>
