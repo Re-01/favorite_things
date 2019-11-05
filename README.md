@@ -25,4 +25,6 @@ Then you can see our site!
 
 Built With CSS 3 HTML 5
 
+-------------------------------------------
+
 Author: Renata Cunha - Designer & Developer
