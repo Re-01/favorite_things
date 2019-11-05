@@ -19,28 +19,37 @@ router.get('/', (req, res) => {
     })
 })
 
-router.get('/:id', (req, res) => {
-    console.log('hit a dynamic route!');
-    console.log(req.params.id)
-    
-        let query = `SELECT * FROM tbl_thing WHERE profID="${req.params.id}"`;
-    
-        sql.query(query, (err, result) => {
-            if (err) { throw err; console.log(err); }
-    
-            console.log(result); // should see objects wrapped in an array
-    
-            result[0].social = result[0].social.split(",").map(function(item) {
-                item = item.trim();
+router.get('/users/:id', (req, res) => {
+    console.log('This is a dynamic route!');
 
-                return item;
-            })
+    let query = `SELECT * FROM tbl_thing WHERE ID="${req.params.id}"`;
+    
+    sql.query(query, (err, result) => {
+        if (err) { throw err; console.log(err); }
 
-            console.log('after split ', result[0]);
+        console.log(result);
+        
+        res.json(result);
 
-            // render the home view with dynamic data
-            res.json(result);
-        });
+    })
+    // console.log(req.params.id)
+    
+    
+        // sql.query(query, (err, result) => {
+           // if (err) { throw err; console.log(err); }
+    
+           // console.log(result); // should see objects wrapped in an array
+    
+        // result[0].social = result[0].social.split(",").map(function(item) {
+         //   item = item.trim();
+
+        //    return item;
+    //    })
+
+     //   console.log("after trim / conversion:", result[0]);
+
+        // render the home view with dynamic data
+   //     res.render({ layout: `${req.params.id}`)};
 })
 
 module.exports = router;
