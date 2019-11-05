@@ -18,6 +18,7 @@ const myVM = (() => {
         let bioContent  = `
         <p>${person.Type}</p>
         <h4>Reason:</h4>
+        <p>${person.Description}</p>
         
         `;
 
