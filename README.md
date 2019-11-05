@@ -1,8 +1,8 @@
 
-### Welcome to the fan page of Favorite Things.
+### WELCOME to the fan page of Favorite Things.
 
 
-## Prerequisites: All you need is an internet browser, # but our site works best on Google Chrome
+## Prerequisites: All you need is an internet browser, but our site works best on Google Chrome
 
 Here you will find pictures and informations about Renata's favorite things!
 
