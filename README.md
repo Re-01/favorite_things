@@ -2,7 +2,7 @@
 ### Welcome to the fan page of Favorite Things.
 
 
-## Prerequisites: All you need is an internet browser, but our site works best on Google Chrome
+## Prerequisites: All you need is an internet browser, # but our site works best on Google Chrome
 
 Here you will find pictures and informations about Renata's favorite things!
 
@@ -10,6 +10,7 @@ CLICK IN EACH BOX TO SEE THE PICTURES...
 ...and take your time to read everything!
 
 ------->>>>--------
+
 Installing git init
 
 Clone this repository
